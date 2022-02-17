@@ -31,7 +31,7 @@ public class ProductsApi {
 		return new ResponseEntity<List<Products>>(repository.findAll(), HttpStatus.OK);
 	}
 
-	// http://localhost:8899/api/v1/products/45000
+	//http://localhost:8899/api/v1/products/findByPriceGreaterThan/45000
 
 	@GetMapping("/findByPriceGreaterThan/{productPrice}")
 	public ResponseEntity<List<Products>> findProductsByProductsPrice(@PathVariable("productPrice") Double productPrice) {
@@ -39,13 +39,13 @@ public class ProductsApi {
 		return new ResponseEntity<List<Products>>(repository.findByProductPriceGreaterThanEqual(productPrice).get(),HttpStatus.OK);
 	}
 
-	// http://localhost:8899/api/v1/products/findByName=
+	// http://localhost:8899/api/v1/products/findByName?productName=samsung galaxy12
 	@GetMapping("/findByName")
 	public ResponseEntity<List<Products>> findProductsByName(@RequestParam("productName") Optional<String> productName) {
 		return new ResponseEntity<List<Products>>(repository.findByProductNameLike(productName.orElse("")).get(),HttpStatus.OK);
 	}
 
-	// http://localhost:8899/api/v1/products/findByBrand=
+	// http://localhost:8899/api/v1/products/findByBrand?productBrand=samsung
 	@GetMapping("/findByBrand")
 	public ResponseEntity<List<Products>> findProductsByBrand(@RequestParam("productBrand") Optional<String> ProductBrand) {
 		return new ResponseEntity<List<Products>>(repository.findByProductBrandLike(ProductBrand.orElse("")).get(),HttpStatus.OK);
