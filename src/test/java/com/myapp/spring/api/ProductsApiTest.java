@@ -113,27 +113,9 @@ public class ProductsApiTest {
 	  .andExpect(jsonPath("$[0].productPrice", is(70000.00)))
 	  .andExpect(jsonPath("$[0].productBrand", is("oneplus")));
 	  
-	  /*.andExpect(jsonPath("$[1].productId",
-	  is(36))).andExpect(jsonPath("$[1].productReview", is("Awesome")))
-	  .andExpect(jsonPath("$[1].productName", is("SamsungGalaxy12")))
-	  .andExpect(jsonPath("$[1].productPrice", is(20000.00)))
-	  .andExpect(jsonPath("$[1].productBrand", is("samsung")))
-	  
-	  .andExpect(jsonPath("$[2].productId",
-	  is(37))).andExpect(jsonPath("$[2].productReview", is("Awesome")))
-	  .andExpect(jsonPath("$[2].productName", is("Iphone13")))
-	  .andExpect(jsonPath("$[2].productPrice", is(700000.00)))
-	  .andExpect(jsonPath("$[2].productBrand", is("Iphone")));*/
 	  
 	  }
 	 
-
-	
-
-	
-	
-	
-
 	@Test
 	@DisplayName("Test All Products By Name /api/v1/products/{productName}")
 	public void testGetAllProductsByName() throws Exception {
