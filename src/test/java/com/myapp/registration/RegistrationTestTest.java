@@ -18,7 +18,7 @@ public class RegistrationTestTest {
 				"C:\\drivers\\chromedriver_win32\\chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
 		driver.manage().window().maximize();
-		driver.get("http://localhost:8888");
+		driver.get("http://127.0.0.1:8899");
 
 		 WebElement email = driver.findElement(By.name("email"));
 		 email.sendKeys("test6.lambdatest@gmail.com");
@@ -26,7 +26,7 @@ public class RegistrationTestTest {
 		 WebElement phone = driver.findElement(By.name("phone"));
 		 phone.sendKeys("9876543210");
 		 
-		 WebElement username = driver.findElement(By.name("Sreenatha"));
+		 WebElement username = driver.findElement(By.name("username"));
 		 username.sendKeys("Sreenatha");
 
 		 WebElement password = driver.findElement(By.name("password"));
@@ -39,7 +39,7 @@ public class RegistrationTestTest {
 		 WebElement signUp = driver.findElement(By.xpath("//button[contains(@class,'btn sign-up-btn-2 btn-block')]"));
 		 signUp.click();
 
-		 String expectedURL = "http://localhost:8888";
+		 String expectedURL = "http://127.0.0.1:8899";
 		 String actualURL = driver.getCurrentUrl();
 		 assertEquals(actualURL, expectedURL);
 		 
