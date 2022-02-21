@@ -18,28 +18,28 @@ public class RegistrationTestTest {
 				"C:\\drivers\\chromedriver_win32\\chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
 		driver.manage().window().maximize();
-		driver.get("http://localhost:8888");
+		driver.get("http://127.0.0.1:8899");
 
-		 WebElement email = driver.findElement(By.name("email"));
-		 email.sendKeys("test6.lambdatest@gmail.com");
+		 WebElement email = driver.findElement(By.id("email"));
+		 email.sendKeys("test6.test@gmail.com");
 		 
-		 WebElement phone = driver.findElement(By.name("phone"));
+		 WebElement phone = driver.findElement(By.id("phoneNumber"));
 		 phone.sendKeys("9876543210");
 		 
-		 WebElement username = driver.findElement(By.name("Sreenatha"));
-		 username.sendKeys("Sreenatha");
+		 WebElement username = driver.findElement(By.id("username"));
+		 username.sendKeys("Abce12324@");
 
-		 WebElement password = driver.findElement(By.name("password"));
+		 WebElement password = driver.findElement(By.id("password"));
 		 password.sendKeys("Test@12345");
 		 
 
-		 WebElement confirmpassword = driver.findElement(By.name("confirmpassword"));
+		 WebElement confirmpassword = driver.findElement(By.id("passwordconfirm"));
 		 confirmpassword.sendKeys("Test@12345");
 
 		 WebElement signUp = driver.findElement(By.xpath("//button[contains(@class,'btn sign-up-btn-2 btn-block')]"));
 		 signUp.click();
 
-		 String expectedURL = "http://localhost:8888";
+		 String expectedURL = "http://127.0.0.1:8899";
 		 String actualURL = driver.getCurrentUrl();
 		 assertEquals(actualURL, expectedURL);
 		 
