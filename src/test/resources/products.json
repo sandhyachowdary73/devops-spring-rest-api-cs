@@ -1,0 +1,16 @@
+[
+{
+"productId":1,
+"productName":"Chocolate",
+"productReview":"Awesome",
+"productBrand":"Dairymilk",
+"productPrice":100.00
+},
+{
+"productId":2,
+"productName":"Cake",
+"productReview":"Delicious",
+"productBrand":"Bans",
+"productPrice":250.00
+}
+]
