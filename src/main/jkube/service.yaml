@@ -4,5 +4,5 @@ spec:
   type: NodePort
   ports:
     - port: 8899
-      nodePort: 31371
+      nodePort: 31471
 
