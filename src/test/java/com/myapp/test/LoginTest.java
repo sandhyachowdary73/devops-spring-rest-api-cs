@@ -18,14 +18,14 @@ public class LoginTest {
 	WebDriver driver=new ChromeDriver();
 	
 	driver.get("http://127.0.0.1:8899");
+
 	WebElement Username=driver.findElement(By.id("username"));
 	WebElement password=driver.findElement(By.id("password"));
 	WebElement login=driver.findElement(By.name("commit"));
 	Username.sendKeys("username");
-	password.sendKeys("$password");
+	password.sendKeys("password");
 	login.click();
-	
-	
+
 	
 	}
 
