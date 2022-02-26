@@ -18,7 +18,7 @@ public class LoginTest {
 	@Test
 	public void login() throws InterruptedException {
 		System.setProperty("webdriver.chrome.driver",
-				"C:\\drivers\\chromedriver_win32\\chromedriver.exe");
+				"C:\\softwares\\chromedriver.exe");
 	WebDriver driver=new ChromeDriver();
 	
 	driver.get("http://127.0.0.1:8899");
