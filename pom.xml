@@ -11,7 +11,7 @@
 	<groupId>devops-spring-rest-api-cs</groupId>
 	<artifactId>devops-spring-rest-api-cs</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>new-devops</name>
+	<name>devops-spring-rest-api-cs</name>
 	<description>Demo project for Spring Boot</description>
 	<properties>
 		<java.version>11</java.version>
