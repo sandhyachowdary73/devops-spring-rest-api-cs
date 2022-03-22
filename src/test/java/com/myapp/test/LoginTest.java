@@ -29,21 +29,13 @@ public class LoginTest {
 	password.sendKeys("Test12345");
 	Thread.sleep(500);
 	login.submit();
-	//String actualUrl="http://127.0.0.1:8888";
-//	String expectedUrl= driver.getCurrentUrl();
-	//assertEquals(expectedUrl,actualUrl);
+	
 	
 	 String expectedTitle = "Log in with your account";
-   //  String actualTitle = driver.getTitle();
-   //  assertEquals(actualTitle, expectedTitle);
-	
-	//Validate the actual page title with expected page title using assert equals method
-	//System.out.println("Assert equals method validation");
-	//assertEquals(expectedTitle, driver.getTitle());
-	
+   
 	
 
-	// Page title validation using assert false method
+	
 	System.out.println("Assert false method validation");
 	assertFalse("Title does match", expectedTitle.equals(driver.getTitle()));
 	
